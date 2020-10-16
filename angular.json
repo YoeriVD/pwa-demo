@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mercedes-pwa": {
+    "Petronas-pwa": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mercedes-pwa",
+            "outputPath": "dist/Petronas-pwa",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,9 +28,7 @@
               "src/assets",
               "src/manifest.webmanifest"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -69,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mercedes-pwa:build"
+            "browserTarget": "Petronas-pwa:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mercedes-pwa:build:production"
+              "browserTarget": "Petronas-pwa:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mercedes-pwa:build"
+            "browserTarget": "Petronas-pwa:build"
           }
         },
         "test": {
@@ -95,9 +93,7 @@
               "src/assets",
               "src/manifest.webmanifest"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         },
@@ -109,24 +105,23 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "mercedes-pwa:serve"
+            "devServerTarget": "Petronas-pwa:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "mercedes-pwa:serve:production"
+              "devServerTarget": "Petronas-pwa:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "mercedes-pwa"
+    }
+  },
+  "defaultProject": "Petronas-pwa"
 }
