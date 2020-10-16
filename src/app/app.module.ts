@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
+      registrationStrategy: 'registerImmediately',
     }),
     ZXingScannerModule,
   ],
